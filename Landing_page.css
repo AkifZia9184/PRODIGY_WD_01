@@ -3,22 +3,11 @@ body{
     margin:0;
     padding:0;
 }
-
-#tittle{
-    text-align: center;
-    padding-top: 1%;
-    color: rgb(28, 60, 222);
-}
-
-h1{
-    font-size:300%;
-}
-
-#but{
+.vertical #but{
     background-color: rgb(43, 39, 39);
     border: none;
     color: white;
-    padding: 15px 32px;
+    margin: 15px 23px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -28,8 +17,52 @@ h1{
     
 }
 
-#navbar{
-    /* padding-left: 10%; */
+.vertical #navbar{
     background-color: rgb(43, 39, 39);
     margin:0;
+}
+  
+.vertical a {
+   
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+.vertical a:hover {
+    background-color: #ccc;
+    font-family:fantasy;
+    color: blue;
+}
+  
+.vertical a.active {
+    background-color: #04AA6D;
+    color: white; 
+}
+
+.vertical #home, .vertical #network, .vertical #message, .vertical #noti, .vertical #jobs {
+    width: 100px;
+    height: 150px;
+    overflow-y: auto;
+    display: none;
+    vertical-align: top;
+    font-size: small;
+}
+.vertical #home{
+    margin-left: 60%;
+}
+.vertical #network{
+    margin-left: 66.5%;
+}
+.vertical #message{
+    margin-left: 82.5%;
+}
+.vertical #noti{
+    margin-left: 92%;
+}
+.vertical #jobs{
+    margin-left: 75.5%;
 }

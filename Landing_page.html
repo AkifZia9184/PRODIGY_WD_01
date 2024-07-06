@@ -7,21 +7,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Landing_page.css">
+    <script src="Landing_page.js"></script>
 </head>
-<body>
-    <nav id="navbar">
-        <button id="but" ><i class="fa fa-linkedin-square" style="font-size:40px"></i></button>
-        <span style="padding-right: 45%; font-size:xx-large;color: white;">Linkedin</span>
-        <button id="but"><i class="material-icons">home</i><br>Home</button>
-        <button id="but"><i class="material-icons">group</i><br>My Network</button>
-        <button id="but"><i class="material-icons">work</i><br>Jobs</button>
-        <button id="but"><i class="material-icons">message</i><br>Messaging</button>
-        <button id="but"><i class="material-icons">notifications</i><br>Notification</button>
-
-    </nav>
-    <div id="tittle">
-        <h1></h1>     
-        
+<body onmouseleave="closee()">
+    <div class="vertical">
+        <nav id="navbar" onmouseenter="close()">
+            <button id="but"><i class="fa fa-linkedin-square" style="font-size:40px"></i></button>
+            <span style="padding-right: 45%; font-size:xx-large;color: white;">Linkedin</span>
+            <button id="but" onmouseenter="dropdown_home()"><i class="material-icons">home</i><br>Home</i></button>
+            <button id="but" onmouseenter="dropdown_network()"><i class="material-icons">group</i><br>My Network <i class="fa fa-caret-down"></i></button>
+            <button id="but" onmouseenter="dropdown_jobs()"><i class="material-icons">work</i><br>Jobs <i class="fa fa-caret-down"></i></button>
+            <button id="but" onmouseenter="dropdown_message()"><i class="material-icons">message</i><br>Messaging <i class="fa fa-caret-down"></i></button>
+            <button id="but" onmouseenter="dropdown_noti()"><i class="material-icons">notifications</i><br>Notification <i class="fa fa-caret-down"></i></button>
+        </nav>
+        <div id="network" onmouseleave="closee()">
+            <a href="#">Connect Request</a>     
+            <a href="#">Follower</a>     
+            <a href="#">New Connection</a>     
+            <a href="#">Profile view</a>        
+        </div>
+        <div id="jobs" onmouseleave="closee()">
+            <a href="#">Machine Learning</a>     
+            <a href="#">Artificial Intelligence</a>     
+            <a href="#">Development</a>     
+            <a href="#">Full Stack</a>     
+            <a href="#">App Dev</a>       
+        </div>
+        <div id="message" onmouseleave="closee()">
+            <a href="#">Chat</a>     
+            <a href="#">Group chat</a>     
+            <a href="#">Congrats</a>     
+            <a href="#">Reaction</a>            
+        </div>
+        <div id="noti" onmouseleave="closee()">
+            <a href="#">Messages</a>     
+            <a href="#">Mention</a>     
+            <a href="#">Group chat</a>     
+            <a href="#">Job Alert</a>     
+            <a href="#">Post Analytics</a>        
+        </div>
     </div>
 
 </body>
