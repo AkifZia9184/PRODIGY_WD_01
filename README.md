@@ -1,1 +1,1 @@
-Responsive Landing page
+<b>Responsive Landing page</b>
