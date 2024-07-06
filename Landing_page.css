@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(18, 17, 17, 0.997);
+    margin:0;
+    padding:0;
+}
+
+#tittle{
+    text-align: center;
+    padding-top: 1%;
+    color: rgb(28, 60, 222);
+}
+
+h1{
+    font-size:300%;
+}
+
+#but{
+    background-color: rgb(43, 39, 39);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-size: small;
+    cursor: pointer;
+    
+}
+
+#navbar{
+    /* padding-left: 10%; */
+    background-color: rgb(43, 39, 39);
+    margin:0;
+}
